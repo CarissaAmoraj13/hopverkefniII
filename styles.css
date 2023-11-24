@@ -1,0 +1,284 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: sans-serif;
+   
+
+}
+.main-header{
+   margin-left: 172px;
+    margin-bottom: 15px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E0AFA0;
+    color: #463f3a;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+/**
+**! Navbar
+**/
+
+    @media screen and (max-width: 1300px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar a {
+            width: 20%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 20px;
+            text-align: center;
+            gap: 10px;
+
+        }
+
+        
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar a {
+            width: 30%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-right: 20px;
+            text-align: center;
+            gap: 10px;
+
+        }
+
+       
+    }
+
+.navbar button {
+    background-color: #c6ac8f;
+    color: blanchedalmond;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: -900px;
+}
+.cart{
+    background-color: #c6ac8f;
+    color: blanchedalmond;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+
+   
+}
+
+
+.cartAmount {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 16px;
+
+    background-color: red;
+    color: #463f3a;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+/** 
+* !Shop items styles
+**/
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 234px);
+    gap: 30px;
+    justify-content: center;
+    
+
+}
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }
+
+}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1,223px);
+    }
+
+}
+
+.item {
+    border: 2px solid #463f3a;
+    border-radius: 4px;
+    
+}
+.item img {
+    width:200px;
+    height: 220px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 10px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+}
+
+.button-link {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #c6ac8f;
+    color: blanchedalmond;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+   gap:40px;
+   margin-right: -700px;
+   
+    
+}
+
+
+/**
+*!Category List
+**/
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3,223px);
+   gap: 30px;
+   text-align: center;
+   border: 2px solid #463f3a;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.categories.item{
+    text-decoration: none;
+    color: #4CAF50;
+}
+@media (max-width:1000) {
+    .categories{
+        grid-template-columns: repeat(2,223px);
+    }
+     }
+     @media (max-width:500) {
+        .categories{
+            grid-template-columns: repeat(1,223px);
+        }
+         }
+
+       
+        
+           
+        
+.index-category {
+    display: flex;
+    
+width: 100%;
+padding: 60px 0;
+background-color: #b75d69;
+color: white;
+justify-content: center;
+width: 300px;
+height: 200px;
+gap: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+}
+.index-category-box{
+    
+flex-direction: column;
+    display: flex;
+    grid-template-columns: repeat(3,223px);
+}
+
+
+.shop h1 {
+text-decoration-line: none;
+text-align: center;
+background-color: #b75d69;
+}
+
+.header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Add styling for the clickable image containers */
+.image-container {
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container form{
+    margin-bottom: 30px;
+    margin-left: 140px;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .container form input {
+    
+    font-size: 100%;
+    font-weight: 400;
+    
+  }
+ 
+
